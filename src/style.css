@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input[type="checkbox"]:checked + h2 {
+    color: gray; 
+    text-decoration: line-through; 
+  }

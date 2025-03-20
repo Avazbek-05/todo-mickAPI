@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="bg-[rgba(189,155,80,0.33)]">
+    <div
+      class="bg-[#1f2e4139] rounded-xl w-[700px] min-h-[100px] m-auto mt-[20%] p-2"
+    >
+      <!-- form -->
+      <div class="p-4">
+        <form
+          action="#"
+          id="form-todo"
+          class="flex items-center gap-2 justify-between"
+        >
+          <input
+            class="w-full pl-3 bg-[#3d4a5e] outline-none py-2 rounded-xl text-white"
+            type="text"
+            name="text"
+            placeholder="Type todo..."
+            autocapitalize="off"
+            required
+          />
+          <button class="p-[6px_20px] bg-[#122a8eb6] rounded-xl">
+            <i class="fa-solid fa-plus text-white"></i>
+          </button>
+        </form>
+      </div>
+      <!-- form end -->
+
+      <div class="todo-list flex flex-col gap-6">
+        
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
