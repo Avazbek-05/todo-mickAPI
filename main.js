@@ -53,7 +53,7 @@ function showTodo(data) {
      <input type="checkbox"  ${
        value.check ? "checked" : ""
      } onchange="editCheck(this)" data-id="${value.id}" />
-        <h2 class='text-[yellow] text-[20px] ${
+        <h2 class='text-[#fff] text-[20px] ${
           value.check ? "line-through" : ""
         }'>${value.message}</h2>
      </div>
