@@ -71,6 +71,7 @@ function showTodo(data) {
     </div>
     `;
   });
+  updateProgress();
 }
 
 function getTodo(data) {
@@ -130,4 +131,14 @@ function editCheck(checkbox) {
       getTodo();
     })
     .catch((error) => console.log(error));
+}
+
+let progress_bar = document.getElementById("progress-bar");
+function updateProgress() {
+  let total = barchaTodo.length;
+  let completed = barchaTodo.filter((todo) => todo.check).length;
+  let progress = total > 0 ? (completed / total) * 100 : 0; 
+
+  progress_bar.style.width = `${progress}%`;
+  progress_bar.textContent = `${Math.round(progress)}%`;
 }
